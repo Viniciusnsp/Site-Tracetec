@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167245466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167245466-1');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Tec Rastreamento</title>
+
+    <link rel="shortcut icon" href="./assets/images/icon.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/Jquery.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/56f393793a.js" crossorigin="anonymous"></script>
+    
+    <!-- Start of tracetec Zendesk Widget script -->
+<!--<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=7eec20c1-288e-4a2b-8f6e-332b1d9daccc"> </script>-->
+<!-- End of tracetec Zendesk Widget script -->
+  </head>
+  <body>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <header class="header">
+      <div class="container container-header">
+        <a href="index.html" class="menu-logo"><img src="assets/images/logo.png" alt="TraceTec"></a>
+
+        <nav class="menu-nav">
+
+          <div class="menu-overlay"></div>
+           <a href="#" class="menu-open"> <i id="menu-mobile" class="fas fa-bars fa-2x"></i></a>
+           <div class="side-menu-wrapper">
+
+            <a href="#" class="menu-close">×</a>
+            
+          <ul>
+            <li><a href="./pages/about.html">Sobre</a></li>
+            <li><a href="./pages/services.html">Serviços</a></li>
+            <li><a href="./pages/platform.html">Plataforma</a></li>
+            <li><a href="./pages/licitacoes.html">Licitações</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="./pages/contact.html">Contato</a></li>
+            <li><a href="./pages/client.html">Área do Cliente</a></li>
+          </ul>
+          <i id="menu-mobile" class="fas fa-bars fa-2x"></i>
+        </nav>
+        
+      </div>
+    
+    </header>
+
+
+    <section>
+      <div class="introduction">
+        
+        <figure id="slide">
+          <img src="./assets/images/s1.png" alt="Trace Tec Rastreamento Veicular">
+          <img src="./assets/images/s2.png" alt="Trace Tec Rastreamento Veicular">
+          <img src="./assets/images/s3.png" alt="Trace Tec Rastreamento Veicular">
+          <img src="./assets/images/s4.png" alt="Trace Tec Rastreamento Veicular">
+          <img src="./assets/images/s5.png" alt="Trace Tec Rastreamento Veicular">
+      </figure>
+   
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  
+      <script type="text/javascript">
+  
+       $(document).ready(function(){
+          $("#slide img:eq(0)").addClass("ativo").show();
+      })
+  
+      setInterval(slide,6000);
+
+          function slide(){
+
+              if($(".ativo").next().size()){  
+
+                  $(".ativo").fadeOut(2000).removeClass("ativo").next().fadeIn(2000).addClass("ativo");
+
+                      }else{
+
+                          $(".ativo").fadeOut(2000).removeClass("ativo");
+                          $("#slide img:eq(0)").fadeIn(2000).addClass("ativo");
+                  }   
+          }
+      </script>
+  
+      </div>
+    </section>
+    <section class="about" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+      <h2 class="title">Sobre</h2>
+      <h3>Soluções para Rastreamento e Monitoramento.</h3>
+      <p>A <span  class="tracetec">TRACE TEC</span> é uma empresa moderna com 10 anos de experiência, em Rastreamento e Monitoramento Veicular e na Gestão de Frotas. Disponibilizamos Serviços de Rastreamento e Monitoramento de veículos em tempo real, Gerenciamento de Risco Logístico, efetivos para localização e Gestão de Frotas ou veículos particulares.</p>
+      <a href="./pages/about.html" class="button">Saiba mais</a>
+    </section>
+    <section class="services">
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+      <h2 class="title">Serviços</h2>
+      <h3>Oferecemos a solução mais avançada em segurança para seus veículos.</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="assets/images/rfid.svg" alt="RFID">
+          </div>
+          <h4>Identificação de Motorista</h4>
+          <p>O veículo é ligado somente após a identificação do motorista, através do cartão de proximidade no RFID. Assim, é possível emitir relatórios individuais por motorista.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/truck.svg" alt="Serviço 2 Imagem">
+          </div>
+          <h4>Jornada de Trabalho</h4>
+          <p>Emite relatórios com o início e o fim da jornada do motorista, tempo em condução, descanso e entre outros. Conforme a lei do motorista.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/telemetria.svg" alt="Telemetria">
+          </div>
+          <h4>Telemetria</h4>
+          <p>Controla a dirigibilidade de cada motorista, como aceleração, frenagem brusca, excesso de velocidade, RPM, hodometro e outros. Atribui nota de 0 a 10 a cada motorista e cria o rankeamento dos mesmos.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/bus.svg" alt="Ônibus">
+          </div>
+          <h4>Solução para Ônibus</h4>
+          <p>Controle total da sua gestão de ônibus. Gestão logística, redução de custos e maior eficiência na operação. A Trace Tec é fornecedora certificada à ANTT e atende ao sistema MONITRIIP.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/mixer-truck.svg" alt="Caminhão Betoneira">
+          </div>
+          <h4>Caminhão Betoneira</h4>
+          <p>Sensor que identifica o sentido de giro da betoneira, evitando extravios e tendo maior controle sobre a operação.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/tow-truck.svg" alt="Guincho">
+          </div>
+          <h4>Guincho</h4>
+          <p>Sensor de plataforma que identifica a abertura e o fechamento da plataforma e gera relatórios gerenciais para controle.</p>
+        </li>
+      </ul>
+      <a href="./pages/services.html" class="button">Mais Serviços</a>
+    </div>
+    </section>
+    <section class="benefits" data-aos="zoom-in" data-aos-duration="2000"  data-aos-once="true">
+      <h2 class="title">Vantagens</h2>
+      <h3>Segurança, credibilidade, controle e economia. Segurança para o veículo e motorista. Credibilidade nos serviços que a sua empresa presta. Controle nas operações realizadas. Economia na identificação de gastos excessivos!</h3>
+      <ul>
+        <li>
+          <div>
+            <img src="assets/images/hotel.svg" alt="Icone Empresa">
+          </div>
+          <h4>Para sua Empresa</h4>
+          <p>Supervisão que gera economia e agilidade nas operações diárias do seu negócio.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/truck.svg" alt="Icone Caminhão">
+          </div>
+          <h4>Para sua Frota</h4>
+          <p>Gestão inteligente de frota que garante eficiência para os seus veículos e motoristas.</p>
+        </li>
+        <li>
+          <div>
+            <img src="assets/images/drive.svg" alt="Icone Volante">
+          </div>
+          <h4>Para seus Motoristas</h4>
+          <p>Rastreamento que deixa o motorista seguro ao dirigir e destaca os profissionais mais eficientes.</p>
+        </li>
+      </ul>
+      <a href="./pages/landing.html" class="button">Contrate Agora</a>
+    </section>
+    <section class="platform" >
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+      <h2 class="title">Aplicativo Tracetec</h2>
+      <div class="container" >
+        <div class="plataform-image">
+          <img src="assets/images/plataform.png" alt="Aplicativo mobile TraceTec">
+        </div>
+        <div>
+          <h3>Com o app TraceTec Rastreamento é possível monitorar as ações do seu veículo 24 horas por dia.</h3>
+          <p>Tenha a visualização em mapas digitalizados, fotos de satélites e Street View.
+            <br><br>
+            Roterização enviando trajetos e pontos de entregas diretamente ao smartphone do motorista via aplicativo.
+            <br><br>
+            Faça a criação de pontos de referência e cercas virtuais diretamente nos mapas.
+          </p>
+          <br>
+          <p>Envio de comandos remotamente como: bloqueio, trava baú, acionamento de sirene, para atuação diretamente no veículo.
+            <br><br>
+            Receba alerta no celular e por e-mail se ligarem o seu veículo.
+            <br><br>
+            Informações como localização em tempo real, velocidade e histórico de trajeto percorrido, que proporcionam maior segurança para o seu veículo e possibilitam o gerenciamento da frota de forma rápida e eficaz.
+          </p>
+          <div class="buttons">
+            <a href="https://apps.apple.com/br/app/tracelog/id1458355841" target="_blank">Baixar na App Store <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=br.net.tracelog.imobi" target="_blank">Baixar na Play Store <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="contact" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+      <h2 class="title">Solicite seu Orçamento</h2>
+      <form class="contact-form">
+
+        <img src="./assets/images/orcamento.png" alt="Solicite seu Orçamento">
+
+        <a class="button" href="./pages/landing.html">Solicitar</a>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-storie">
+          <h3>Nossa História</h3>
+          <p>Somos uma empresa moderna com 10 anos de experiência, em Rastreamento, Monitoramento Veicular e na Gestão de Frotas. Experiência e conhecimento aliados à alta tecnologia.</p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <ul>
+            <li>- (48) 3296-8830</li>
+            <li>- comercial@tracelog.net.br</li>
+            <li>- Biguaçu - SC</li>
+            <li>- Rua Bento Francisco, 509</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/trace-log/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com/tracetecgestao/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+            <li><a href="https://www.instagram.com/tracetecfrotas/?hl=pt-br" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCu0Oo5LtYL2_17P6VZQNtDA" target="_blank"><i class="fab fa-youtube fa-3x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <p>TraceTec 2020 - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <div>
+      <a href="https://web.whatsapp.com/send?phone=554898161500&text="
+         target="_blank">
+       <img  class="whatsapp" src="assets/images/whatsapp.svg" alt="Whatsapp Trace Tec Rastreamento Veicular"/>
+       
+      </a>
+  </div>
+  
+  <div>
+      <a href="https://api.whatsapp.com/send?l=pt-BR&phone=554898161500&text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Trace%20Tec%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20voc%C3%AAs."
+         target="_blank">
+       
+       <img  class="whatsapp-mobile" src="assets/images/whatsapp.svg"  alt="Whatsapp Trace Tec Rastreamento Veicular"/>
+      </a>
+  </div>
+
+    <script src="./js/Jquery.js"></script>
+  </body>   
+</html>

@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 10px 0 10px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #E28D17;
+  padding: 5px 0 5px;
+  z-index: 1;
+}
+
+.menu-nav a {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 960px;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-nav ul a:hover::after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.menu-logo img {
+  width: 140px;
+}
+
+.menu-nav {
+  flex: 1;
+  align-self: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  float: right;
+}
+
+.menu-nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+#menu-mobile {
+  display: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  float: right;
+}
+
+#slide {
+    width: 100%; 
+    overflow: hidden;
+    height: 640px;
+    margin: 0 auto;
+    /* box-shadow: 0 0 8px #000; */
+    position: relative;
+    left: 0;
+    
+}
+
+#slide img {
+    position: absolute;
+    width: 100%;
+    height:640px;
+    
+    left: 0;
+}
+
+/* Whatsapp button flutuante */
+
+.whatsapp {
+  position: fixed;
+  top: 82%;
+  right: 1%;
+  padding: 10px;
+  z-index: 10000000;
+  height: 100px;
+}
+.whatsapp:hover {
+  height: 103px;
+}
+
+.whatsapp-mobile{
+  display: none;
+}
+
+/* Introduction */
+.introduction {
+  width: 100%;
+  height: 700px;
+  background:#393939;
+  background-size: cover;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 93px;
+}
+
+
+
+
+
+/* Button */
+.button {
+  display: block;
+  width: 140px;
+  height: 40px;
+  margin: 0 auto 64px auto;
+  color: #FFFFFF;
+  text-align: center;
+  background: #E28D17;
+  border-radius: 50px;
+  padding: 10px 0;
+  border: none;
+}
+
+.button:hover {
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24);
+  background: #C2570F;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in; 
+  -moz-transition: 0.3s ease-in; 
+  -o-transition: 0.3s ease-in; 
+  cursor: pointer;
+}
+
+/* menu close */
+.menu-close {
+  display: none;
+}
+
+/* Title */
+.title {
+  padding: 64px 0 16px 0;
+  font-size : 1.5em;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E28D17;
+  margin: 14px auto 10px auto;
+}
+
+/* About */
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about h3 {
+  font-size : 1.125em;
+  font-weight: bold;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.about p {
+  text-align: center;
+  margin: 16px 0 32px 0;
+  line-height: 25px;
+}
+
+.tracetec {
+  color: #E28D17;
+}
+
+/* Services and Benefits */
+.services, .benefits {
+  width: 100%;
+}
+.services {
+  background: #393939;
+  color: #FFFFFF;
+  padding-bottom: 0.1px;
+}
+
+.services h3, .benefits h3 {
+  margin: 0 auto 32px auto;
+  max-width: 500px;
+  text-align: center;
+  font-size : 1.125em;
+}
+
+.services ul, .benefits ul {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.services ul li, .benefits ul li {
+  max-width: 300px;
+  text-align: center;
+}
+.services ul li h4, .benefits ul li h4 {
+  font-weight: bold;
+}
+
+.benefits h4::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E28D17;
+  margin: 14px auto 10px auto;
+}
+
+.services ul li p, .benefits ul li p {
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.services img, .benefits img {
+  width: 70px;
+  margin: 0 auto 16px auto;
+  background: #E28D17;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Platform */
+.platform {
+  width: 100%;
+  background: #393939;
+  color: #FFFFFF;
+}
+
+.platform div + div {
+  margin-left: 52px;
+  flex-direction: column;
+}
+
+.platform img {
+  width: 250px;
+  margin-bottom: 64px;
+}
+
+.platform h3 {
+  font-size: 1.125em;
+  max-width: 500px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  margin: 32px;
+}
+
+.buttons a {
+  font-size: 1.125em;
+  color: #E28D17;
+  font-weight: bold;
+  margin-right: 32px;
+}
+
+.buttons a:hover {
+  color: #C2570F;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in; 
+  -moz-transition: 0.3s ease-in; 
+  -o-transition: 0.3s ease-in; 
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  
+  /*height:870px ;*/
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.125em;
+  margin-bottom: 4px;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  border: 2px solid #E28D17;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 0.875em;
+}
+
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 120px;;
+  border: 2px solid #E28D17;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 32px;
+  font-size: 0.875em;
+}
+
+.contact-form img {
+  width: 100%;
+  margin: 0;
+  
+ 
+}
+
+.contact-form button {
+  margin-top: -100px;
+  padding: 0;
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #393939;
+  color:#FFFFFF;
+  padding-top: 20px;
+}
+
+.footer h3 {
+  font-size: 1.125em;
+  color: #E28D17;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E28D17;
+  margin: 8px 0 16px 0;
+}
+
+.footer-storie {
+  width: 400px;
+}
+
+.footer .container {
+  justify-content: space-between;
+}
+
+.footer-contact ul li {
+  font-size: 0.875em;
+  line-height: 20px;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  }
+
+.footer-social ul li i {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.footer-social ul li i:hover {
+  color: #E28D17;
+  margin-right: 10px;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in; 
+  -moz-transition: 0.3s ease-in; 
+  -o-transition: 0.3s ease-in; 
+}
+
+.copy {
+  width: 100%;
+  background: #E28D17;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.875em;
+}
+
+/* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  /* Container Tablet */
+  .container, .services h3, .services ul, .benefits h3, .benefits ul, .about, .contact {
+    max-width: 740px;
+  }
+
+  /* Introduction Tablet */
+  #slide {
+    width: 500px;
+     height: 300px;
+     margin-top: 50px;
+   
+   }
+ 
+   #slide img {
+     height: 300px;
+     width: 500px;
+   }
+ 
+
+  /* Services and Benefits Tablet */
+  .services ul, .benefits ul {
+    justify-content: space-around;
+  }
+
+  .contact-form img {
+    margin-left: 60px;
+    width: 600px;
+}
+
+  /* Plataform Tablet */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons a:first-child {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 64px;
+  }
+
+  /* Footer Tablet */
+  .footer-storie {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  /* Container Mobile */
+  .container {
+		flex-direction: column;
+		max-width: 300px;
+  }
+  
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    width: 100px;
+    
+    }
+
+  #slide {
+    width: 100%;
+     height: 300px;
+     margin-top: 0px;
+   
+   }
+ 
+   #slide img {
+     height: 300px;
+     width: 100%;
+   }
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  /* TRANSICAO MENU MOBILE */
+
+  .side-menu-wrapper { /* style menu wrapper */
+    background: rgba(0,0,0,.95);
+    padding: 40px 0 0 40px;
+    position: fixed; /* Fixed position */
+    top: 0;
+    right: 0; /* Sidebar initial position. "right" for right positioned menu */
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s; /* CSS transition speed */
+    width: 250px;
+    font: 20px "Courier New", Courier, monospace;
+    box-sizing: border-box;
+  }
+  .side-menu-wrapper > ul{ /* css ul list style */
+    list-style:none;
+    padding:0;
+    margin:0;
+      overflow-y: auto; /* enable scroll for menu items */
+    height:95%;
+  }
+  .side-menu-wrapper > ul > li > a { /* links */
+      display: block;
+      border-bottom: 1px solid #131313;
+      padding: 6px 4px 6px 4px;
+      color: #989898;
+      transition: 0.3s;
+    text-decoration: none;
+  }
+  .side-menu-wrapper > a.menu-close { /* close button */
+      padding: 8px 0 4px 23px;
+      color: #6B6B6B;
+      display: block;
+      margin: -30px 0 -10px -20px;
+      font-size: 35px;
+      text-decoration: none;
+  }
+  
+  .menu-overlay { /* overlay */
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.7);
+      overflow-y: auto;
+      overflow-x: hidden;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 1s;
+  }
+  /* Menu Mobile */
+  .menu-nav ul{
+    display: block;
+    margin-top: 30px;
+  }
+  
+
+	#menu-mobile {
+    display: block;
+    
+  }
+/*   
+  Introduction Mobile */ 
+  .introduction {
+    
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+
+  /* Services and Benefits Mobile */
+  .services ul, .benefits ul {
+    flex-direction: column;
+  }
+
+  .services ul li, .benefits ul li  {
+    margin: 0 auto;
+  }
+
+  .services h3, .benefits h3, .about {
+  max-width: 300px;
+  }
+
+  /* .services ul li:nth-child(n+4), .platform img {
+    display: none;
+  } */
+
+  /* Plataform Mobile */
+  .platform {
+    text-align: center;
+  }
+
+  .platform div + div {
+    margin: 0;
+  }
+
+  .contact-form img {
+      display: none;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 0;
+  }
+  
+  .buttons a:first-child {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 64px;
+  }
+
+  /* Contact Mobile */
+  .contact {
+    max-width: 300px;
+    padding: 0px;
+    height: 250px;
+  }
+
+  /*Footer Mobile */
+  .footer {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin: 20px 0 16px 0;
+  }
+
+  .footer h3::after {
+  margin: 8px auto 16px auto;
+  }
+  
+  .footer-storie {
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #393939;
+}
+
+.container-client {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-client h2 {
+    color: #fff;
+}
+
+
+.container-display {
+    display: flex;
+}
+
+.platform {
+    width:480px;
+    float: left;
+}
+
+.platform img, .portal img {
+    width: 470px;
+    margin: 0;
+}
+
+.platform title-map {
+    margin-right: 20px;
+    
+}
+
+
+.portal {
+    width: 480px;
+    float: right;  
+}
+
+.portal form input{
+  display: block;
+
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background:rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.login.mostrar {
+  display: flex;
+
+}
+
+.modal {
+  background: #fff ;
+  width: 60%;
+  min-width: 280px;
+  padding: 40px;
+  border: 10px solid #393939;
+  box-shadow: 0 0 0 10px #fff;
+  position: relative;
+}
+
+.modal h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#clientArea label {
+  display: block;
+    font-size: 1.125em;
+    margin-bottom: 4px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#clientArea input {
+  display: block;
+  width: 50%;
+  border: 2px solid #E28D17;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin: 0 auto 10px;
+  
+  font-size: 0.875em;
+}
+
+@keyframes modal {
+  from {
+     opacity: 0;
+     transform: translate3d(0, -60px, 0);
+  }
+  to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal .3s;
+}
+
+
+.fechar {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background: #393939;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal form {
+  display: block;
+}
+
+/* TITLE */
+
+.title-map1 {
+    padding: 64px auto 16px auto;
+    font-size : 1.5em;
+    margin: 60px 0 0 20px;
+}
+
+.title-map1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E28D17;
+  margin: 14px 0 10px 115px;
+}
+
+.title-map2 {
+    padding: 64px auto 16px auto;
+    font-size : 1.5em;
+    margin: 60px 0 0 210px;
+}
+
+.title-map2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E28D17;
+  margin: 14px 0 10px 60px;
+}
+
+
+  
+  /* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  /* Container Tablet */
+  .container, .services h3, .services ul, .benefits h3, .benefits ul, .about, .contact {
+    max-width: 740px;
+  }
+
+  /* Introduction Tablet */
+  .introduction h1 {
+    max-width: 740px;
+  }
+
+  /* Services and Benefits Tablet */
+  .services ul, .benefits ul {
+    justify-content: space-around;
+  }
+
+  /* Plataform Tablet */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons a:first-child {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 64px;
+  }
+
+  /* Footer Tablet */
+  .footer-storie {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  /* Container Mobile */
+  .container {
+		flex-direction: column;
+		width: 100%;
+  }
+  
+    
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    
+    }
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  /* Menu Mobile */
+  .menu-nav ul{
+    display: block;
+    margin-top: 30px;
+	}
+	#menu-mobile {
+    display: block;
+  }
+  
+ .container-display {
+   display: block;
+ }
+
+ .platform {
+   width: 100%;
+   align-items: center;
+ }
+
+ .platform img{
+   max-width: 300px;
+ }
+
+ .portal {
+   width: 100%;
+   align-items: center;
+ }
+ 
+ .portal img {
+   display: block;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+
+ .modal h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+
+
+ #clientArea input {
+   width: 90%;
+ }
+
+ .title-map1 {
+   width: 100%;
+   margin: 0 0 0 0;
+ }
+ 
+ .title-map2{
+   width: 100%;
+   margin: 60px 0 0 0;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   
+ }
+
+ .title-map2::after, .title-map1::after{
+   margin: 14px auto 10px auto;
+   
+ }
+
+  /*Footer Mobile */
+  .footer {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin: 20px 0 16px 0;
+  }
+
+  .footer h3::after {
+  margin: 8px auto 16px auto;
+  }
+  
+  .footer-storie {
+    width: 300px;
+  }
+}

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-about {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 700px;
+    
+
+}
+
+/* Title */
+.title {
+    padding: 64px 0 16px 0;
+    font-size : 1.5em;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+
+.container-about img {
+    height: 500px;
+    float: right;
+    display: flex;
+    
+}
+
+.container-about p  {
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.container-about h2 {
+    
+    color: #E28D17;
+    font-size : 1.125em;
+    font-weight: bold;
+}
+
+/* solution and difficulties */
+.solution, .difficulties-top, .difficulties-bottom {
+    width: 100%;
+
+}
+
+.title1 {
+    padding: 10px 0 16px 0;
+    font-size : 1.5em;
+    text-align: center;
+    margin-top: 0;
+    color:#000;
+}
+
+.title1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+
+  .title2 {
+    padding: 10px 0 16px 0;
+    font-size : 1.5em;
+    text-align: center;
+    margin-top: 0;
+    color:#fff;
+}
+
+.title2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+
+.difficulties-top, .solution {
+    width: 100%;
+    background: #fff;
+}
+
+.difficulties-bottom {
+    width: 100%;
+    background: #393939;
+}
+
+.difficulties-person, .difficulties-company, .solution-company {
+    max-width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+  
+  .difficulties-person ul, .difficulties-bottom ul, .solution ul{
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .difficulties-person ul li , .difficulties-bottom ul li, .solution ul li {
+    max-width: 300px;
+    text-align: center;
+  }
+  .difficulties-person ul li h4, .solution ul li h4 {
+    font-weight: bold;
+  }
+
+  .difficulties-bottom ul li h4 {
+      font-weight: bold;
+      color: #fff;
+  }
+  
+ .difficulties-bottom h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+
+  .difficulties-top h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+
+  .solution h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+  
+.solution ul li p, .difficulties-top ul li p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.difficulties-bottom ul li p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+
+}
+
+.solution img, .difficulties-top img, .difficulties-bottom img {
+    width: 70px;
+    margin: 0 auto 16px auto;
+    background: #E28D17;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  .difficulties-person, .solution, .difficulties-bottom{
+    height: 450px;
+  }
+
+
+  /* Services Tablet */
+  .difficulties-person ul, .solution ul, .difficulties-bottom ul {
+    justify-content: space-around;
+  }
+
+  /* Footer Tablet */
+  .footer-storie {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+    
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    
+    }
+
+  
+  /* Menu Mobile */
+  .menu-nav ul{
+    display: block;
+    margin-top: 30px;
+	}
+	#menu-mobile {
+    display: block;
+  }
+  
+
+  /* Services Mobile */
+
+  .difficulties-person , .solution , .difficulties-bottom {
+   height: 800px;
+  }
+
+  .services ul, .difficulties-person ul, .solution ul, .difficulties-bottom ul {
+    flex-direction: column;
+  }
+
+.difficulties-person ul li, .solution ul li, .difficulties-bottom ul li {
+    margin: 20px auto;
+  }
+
+  .services h3, .benefits h3, .about {
+  max-width: 300px;
+  }
+
+  /* .services ul li:nth-child(n+6){
+    display: none;
+  } */
+
+  /*Footer Mobile */
+  .footer {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin: 20px 0 16px 0;
+  }
+
+  .footer h3::after {
+  margin: 8px auto 16px auto;
+  }
+  
+  .footer-storie {
+    width: 300px;
+  }
+}

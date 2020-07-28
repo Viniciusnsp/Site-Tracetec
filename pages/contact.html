@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167245466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167245466-1');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracetec Rastreamento</title>
+
+    <link rel="shortcut icon" href="../assets/images/icon.png">
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    
+    <script src="https://kit.fontawesome.com/56f393793a.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+      function mascara(telefone){ 
+          if(telefone.value.length == 0)
+              telefone.value = '(' + telefone.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+          if(telefone.value.length == 3)
+              telefone.value = telefone.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
+
+          if(telefone.value.length == 10)
+              telefone.value = telefone.value + '-'; //quando o campo já tiver 9 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+
+}
+  </script>
+
+  </head>
+  <body>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <header class="header">
+      <div class="container container-header">
+        <a href="../index.html" class="menu-logo"><img src="../assets/images/logo.png" alt="TraceTec"></a>
+        <nav class="menu-nav">
+
+          <div class="menu-overlay"></div>
+          <a href="#" class="menu-open"> <i id="menu-mobile" class="fas fa-bars fa-2x"></i></a>
+          
+          <div class="side-menu-wrapper">
+          <a href="#" class="menu-close">×</a>
+          
+          <ul>
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="./services.html">Serviços</a></li>
+            <li><a href="./platform.html">Plataforma</a></li>
+            <li><a href="./licitacoes.html">Licitações</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="./client.html">Área do Cliente</a></li>
+          </ul>
+          <i id="menu-mobile" class="fas fa-bars fa-2x"></i>
+        </nav>
+      </div>
+    </header>
+
+    <body>
+        <section class="container-nav">
+        <section class="container-contact" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+           <div class="div-title">
+            <h2 class="title">Contato</h2>
+            </div>
+            <section class="container-display">
+        </div>
+            <section class="nav">
+        <div class="map">
+            <h2 class="title-map">Venha nos visitar!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.4506388500254!2d-48.64151647758727!3d-27.469014110089446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95274ddfdda5dc9b%3A0x9d7defb04b2258b1!2sR.%20Bento%20Francisco%2C%20509%2C%20Bigua%C3%A7u%20-%20SC%2C%2088160-000!5e0!3m2!1spt-BR!2sbr!4v1586938682279!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+        
+    </section>
+    <div class="clear"></div>
+
+    <section class="contact-map" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+        <h2 class="title-map">Entre em Contato</h2>
+        <form class="contact-form-map" action="contato.php" method="POST">
+          <label name="name">Nome</label>
+          <input type="text" name="name" id="name" required>
+          <label name="email">E-mail</label>
+          <input type="email" name="email" id="email" required>
+          <label name="telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone" size="20" maxlength="15" onkeypress="mascara(this)" required> 
+           
+          <label name="message">Mensagem</label>
+          <textarea name="message" id="message"></textarea>
+          <button class="button" type="submit">Enviar</button>
+        </form>
+      </section>
+      
+    </section>
+
+    <section class="contact-emergency">
+         <div class="text">
+           <h1>Trace Tec</h1>
+           <p>A forma mais indicada de contato direto com a Tracelog. Pelo nosso formulário online, você faz o preenchimento dos principais dados necessários para um completo atendimento.</p>
+           
+         </div>
+         
+         <div class="emergency"> 
+           <h1>Em caso de emergência</h1>
+           <div class="contact-phone">
+         <div class="phone-icon">
+            <img src="../assets/images/phone.svg" alt="Telefone">
+          </div>
+          <div class="phone-number">
+           <h2>0800 648 2209</h2>
+          </div>
+          
+        </div>
+         </div>
+         
+    </section>
+    <div class="clear"></div>
+</section>
+</section>
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-storie">
+            <h3>Nossa História</h3>
+            <p>Somos uma empresa moderna com 10 anos de experiência, em Rastreamento, Monitoramento Veicular e na Gestão de Frotas. Experiência e conhecimento aliados à alta tecnologia.</p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contato</h3>
+            <ul>
+              <li>- (48) 3296-8830</li>
+              <li>- comercial@tracelog.net.br</li>
+              <li>- Biguaçu - SC</li>
+              <li>- Rua Bento Francisco, 509</li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li><a href="https://www.linkedin.com/company/trace-log/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+              <li><a href="https://www.facebook.com/tracetecgestao/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+              <li><a href="https://www.instagram.com/tracetecfrotas/?hl=pt-br" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCu0Oo5LtYL2_17P6VZQNtDA" target="_blank"><i class="fab fa-youtube fa-3x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          <p>TraceTec 2020 - Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="../js/Jquery.js"></script>
+   
+
+       <div>
+      <a href="https://web.whatsapp.com/send?phone=554898161500&text="
+         target="_blank">
+       <img  class="whatsapp" src="../assets/images/whatsapp.svg" alt="Whatsapp Trace Tec Rastreamento Veicular"/>
+       
+      </a>
+  </div>
+  
+  <div>
+      <a href="https://api.whatsapp.com/send?l=pt-BR&phone=554898161500&text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Trace%20Tec%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20voc%C3%AAs."
+         target="_blank">
+       
+       <img  class="whatsapp-mobile" src="../assets/images/whatsapp.svg"  alt="Whatsapp Trace Tec Rastreamento Veicular"/>
+      </a>
+  </div>
+  
+    </body>   
+  </html>

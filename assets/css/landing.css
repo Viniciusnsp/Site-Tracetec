@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background: #E28D17;
+    padding: 15px 0;
+    z-index: 1;
+}
+
+/* Whatsapp button flutuante */
+
+.whatsapp {
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    height: 100px;
+  }
+  .whatsapp:hover {
+    height: 103px;
+  }
+  
+  .whatsapp-mobile{
+    display: none;
+  }
+  
+
+
+.menu-logo img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.container-introduction {
+    background: #393939;
+    
+}
+
+.introduction {
+  max-width: 960px;
+  height: 400px;
+  margin-top: 150px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.introduction img {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.image-introduction {
+    float: left;
+}
+
+.text-introduction {
+    float: right;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.text-introduction h1 {
+    font-size: 1.8em;
+    margin: 10px 0 20px 0;
+    font-weight: 900;
+}
+
+.text-introduction h2 {
+    font-size: 1.0em;
+    font-weight: 600;
+    
+}
+
+.text-h1,.text-h2 {
+    color: #E28D17;
+}
+
+.container-form {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.form-father {
+    float: left;
+}
+
+
+
+.form {
+    max-width: 960px;
+    margin: 100px auto 30px auto;
+    display: flex;
+}
+
+.form-form {
+    max-width: 960px;
+    margin: 30px auto;
+    display: flex;
+}
+
+.form img, .form-form img {
+    width: 40px;
+    float: left;
+}
+
+.form h3, .form-form h3 {
+    float: right;
+    margin: 10px;
+    font-size: 1.0em;
+    font-weight: 700;
+}
+
+.formulario {
+    margin-top: -70px;
+    float: right;
+    width: 395px;
+    height: 600px;
+    border-width: 5px;
+    border-color: #E28D17;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-weight: 700;
+   
+   
+
+}
+
+/* Button */
+.button {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 20px auto 64px auto;
+    color: #FFFFFF;
+    text-align: center;
+    background: #E28D17;
+    border-radius: 50px;
+    padding: 10px 0;
+    border: none;
+  }
+  
+  .button:hover {
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24);
+    background: #C2570F;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in; 
+    -moz-transition: 0.3s ease-in; 
+    -o-transition: 0.3s ease-in; 
+    cursor: pointer;
+  }
+
+  .contact-form-map {
+     max-width: 380px;
+      margin: 30px 20px 20px 20px;
+  }
+
+  .contact-form-map label {
+    display: block;
+    font-size: 1.125em;
+    margin-bottom: 4px;
+  }
+  
+  .contact-form-map input, .contact-form-map select {
+    display: block;
+    width: 100%;
+    border: 2px solid #E28D17;
+    border-radius: 8px;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    font-size: 0.875em;
+  }
+  
+  .contact-form-map textarea {
+    display: block;
+    width: 100%;
+    height: 120px;;
+    border: 2px solid #E28D17;
+    border-radius: 8px;
+    padding: 7px 10px;
+    margin-bottom: 32px;
+    font-size: 0.875em;
+  }
+
+
+  /* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+     
+    .introduction, .container-form {
+        max-width: 760px;
+    }
+}
+  @media only screen and (max-width: 739px) {
+    /* INTRODUÇÃO MOBILE */
+    .container img {
+        width: 100px;
+    }
+    .introduction {
+        height: 310px;
+    }
+    .text-introduction {
+        margin-top: 50px;
+    }
+
+
+    /* CHECKLIST MOBILE */
+    .image-introduction {
+        display: none;
+    }
+
+    .container-form {
+        display: block;
+    }
+
+    .form-father {
+        height: 500px;
+    }
+    
+    .form, .form-form {
+        margin: 30px 20px;
+        
+    }
+    
+      
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    width: 100px;
+    
+    }
+
+    /* FORMULARIO MOBILE */
+    .formulario {
+        max-width: 304px;
+        height: 650px;
+        margin-top: 10px;
+        
+        
+    }
+
+    #form-mobile {
+        max-width: 304px;
+       margin: 0 auto;
+    }
+
+    .contact-form-map {
+        margin: 30px 10px;
+    }
+  
+ 
+  }

@@ -1,0 +1,6 @@
+[21-May-2020 10:40:36 America/Recife] PHP Parse error:  syntax error, unexpected '.' in /home/tracelognet/public_html/pages/contato.php on line 27
+[21-May-2020 10:41:24 America/Recife] PHP Parse error:  syntax error, unexpected '.' in /home/tracelognet/public_html/pages/email.php on line 29
+[21-May-2020 10:44:18 America/Recife] PHP Parse error:  syntax error, unexpected '.' in /home/tracelognet/public_html/pages/contato.php on line 27
+[21-May-2020 10:45:31 America/Recife] PHP Warning:  require(/home/tracelognet/public_html/PHPMailer-master/src/PHPMailer.php): failed to open stream: No such file or directory in /home/tracelognet/public_html/pages/contato.php on line 3
+[21-May-2020 10:45:31 America/Recife] PHP Fatal error:  require(): Failed opening required '/home/tracelognet/public_html/PHPMailer-master/src/PHPMailer.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tracelognet/public_html/pages/contato.php on line 3
+[21-May-2020 10:56:35 America/Recife] PHP Parse error:  syntax error, unexpected '.' in /home/tracelognet/public_html/pages/email.php on line 29

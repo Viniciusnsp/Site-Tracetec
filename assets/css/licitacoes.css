@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-licitacoes {
+    max-width: 960px;
+    
+    margin: 50px auto 0 auto;
+}
+
+.container-licitacoes h3 {
+    text-align: center;
+    font-size : 1.0em;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 20px;
+
+}
+
+.prefeituras {
+    max-width: 960px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 0.1px;
+    /*height: 500px;*/
+}
+
+.prefeituras ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.prefeituras ul li {
+    max-width: 300px;
+    /*text-align: center;*/
+    margin: 30px 30px 20px 30px;
+}
+
+.prefeituras ul li h4 {
+    font-weight: bold;
+}
+
+.prefeituras img {
+    width: 120px;
+}
+
+/* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+    .prefeituras{
+      height: 550px;
+    }
+  
+  
+    /* Services Tablet */
+    .prefeituras ul {
+      justify-content: space-around;
+    }
+  
+    /* Footer Tablet */
+    .footer-storie {
+      width: 350px;
+    }
+  }
+  
+  @media only screen and (max-width: 739px) {
+  
+    .container-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+    
+      
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    
+    }
+  
+    /* Menu Mobile */
+    .menu-nav ul{
+          display: none;
+      }
+      #menu-mobile {
+      display: block;
+    }
+    
+  
+    /* Services Mobile */
+  
+   
+     .prefeituras {
+         height: 2600px;
+     }
+    .prefeituras ul {
+      flex-direction: column;
+    }
+  
+  .prefeituras ul li {
+      margin: 20px auto;
+    }
+  
+    .container-licitacoes h3 {
+    max-width: 300px;
+    text-align: center;
+    }
+
+
+  
+    /* .services ul li:nth-child(n+6){
+      display: none;
+    } */
+  
+    /*Footer Mobile */
+    .footer {
+      text-align: center;
+    }
+  
+    .footer h3 {
+      margin: 20px 0 16px 0;
+    }
+  
+    .footer h3::after {
+    margin: 8px auto 16px auto;
+    }
+    
+    .footer-storie {
+      max-width: 280px;
+    }
+  }

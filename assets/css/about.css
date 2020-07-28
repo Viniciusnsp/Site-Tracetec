@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-about {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 800px;
+    
+
+}
+
+.tracetec {
+  color: #E28D17;
+}
+
+/* Title */
+.title {
+    padding: 64px 0 16px 0;
+    font-size : 1.5em;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #E28D17;
+    margin: 14px auto 10px auto;
+  }
+  
+    .structure .title {
+    padding: 20px 0 16px 0;
+    font-size : 1.5em;
+    text-align: center;
+    margin-top: 0;
+ 
+  }
+
+.container-about img {
+    height: 500px;
+    float: right;
+    display: flex;
+}
+
+.container-about p  {
+    float: left;
+    width: 60%;
+    
+    margin-top: 30px;
+}
+
+.container-about h2 {
+    
+    color: #E28D17;
+    font-size : 1.125em;
+    font-weight: bold;
+}
+
+/* ESTILO ESTRUTURA TRACE TEC */
+.video embed {
+width: 830px;
+height: 470px;
+border-radius: 5px;
+box-shadow: 0 0 8px #000;
+}
+
+.structure {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.structureTitle h3{
+  font-size: 1.25em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .0.5em;  
+  margin-top: 50px;
+}
+
+.structureTitle h3::after {
+  content: "";
+  display: block ;
+  width: 80px;
+  height: 4px;
+  background: #E28D17;
+  margin: 8px 0 16px 0;
+}
+
+.structureImg img {
+  width: 250px;
+   height: 166.66px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #000;
+}
+
+.structureImg ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 50px;
+  justify-content: space-between;
+}
+
+.structureImg ul li {
+  max-width: 300px;
+  text-align: center;
+  margin: 30px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.structureEquipe img{
+width: 100%;
+margin: 0 0 100px;
+
+}
+
+.modal-container1,.modal-container2,.modal-container3,.modal-container4,.modal-container5,.modal-container6,.modal-container7,.modal-container8,.modal-container9{
+
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal-container1.mostrar,.modal-container2.mostrar,.modal-container3.mostrar,.modal-container4.mostrar,.modal-container5.mostrar,.modal-container6.mostrar,.modal-container7.mostrar,.modal-container8.mostrar,.modal-container9.mostrar{
+  display: flex;
+}
+
+.modal img{
+  width:600px;
+  border-radius: 5px;
+}
+
+.modal {
+  background: #E28D17;
+ padding: 5px;
+  min-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px white;
+  position: relative;
+}
+
+@keyframes modal {
+  from  {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+
+  }
+}
+
+.mostrar .modal {
+  animation: modal 2s;
+}
+
+.modal .fechar {
+  position: absolute;
+  font-size: 1.2em;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #E28D17;
+  color: #fff;
+  font-family: monospace;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+
+/* FIM DO ESTILO ESTRUTURA TRACE TEC */
+
+
+/* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  /* Container Tablet */
+  .container-about, .about{
+    max-width: 740px;
+    height: 750px;
+  }
+
+  /* Introduction Tablet */
+ .container-about img {
+  margin-top: 50px;
+  height: 500px;
+  width: 320px;
+
+ }
+ 
+ /*Estrutura Tablet*/
+ 
+ .video embed {
+  width: 700px;
+  min-width: 500px;
+}
+
+/*Fim Estrutura Tablet*/
+
+  /* Footer Tablet */
+  .footer-storie {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  
+
+     
+  /* Menu Mobile */
+  .menu-nav ul{
+    display: block;
+    margin-top: 30px;
+  }
+  
+    
+  .whatsapp {
+    display: none;
+   }
+
+.whatsapp-mobile{
+    display: block;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    width: 100px;
+    
+    }
+
+	#menu-mobile {
+    display: block;
+  }
+
+ 
+  
+  /* Container Mobile */
+  .container-about {
+		flex-direction: column;
+    max-width: 300px;
+    height: 1200px;
+    text-align: center;
+  }
+
+  .container-about img {
+    display: none;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+
+  /* Text Mobile */
+  .container-about p{
+    text-align: center;
+    height: 650px;
+    width: 300px;
+  }
+  
+  /*Estrutura Mobile*/
+  
+   .video embed {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #000;
+    }
+
+    .structureImg ul li {
+      margin: 30px auto;
+    }
+
+    .structureTitle h3 {
+      margin-left: 10px;
+    }
+    
+     .modal img{
+      width:300px;
+      border-radius: 5px;
+    }
+    
+/*Fim estrutura Mobile*/
+
+
+  /*Footer Mobile */
+  .footer {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin: 20px 0 16px 0;
+  }
+
+  .footer h3::after {
+  margin: 8px auto 16px auto;
+  }
+  
+  .footer-storie {
+    width: 300px;
+  }
+}
