@@ -110,7 +110,7 @@ body {
   height: 450px;
 }
 
-.video embed {
+.video video {
   width: 710px;
   height: 400px;
   box-shadow: 0 0 8px #000;
