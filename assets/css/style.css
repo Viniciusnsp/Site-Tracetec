@@ -476,7 +476,7 @@ body {
 .whatsapp-mobile{
     display: block;
     position: fixed;
-    top: 82%;
+    top: 80%;
     right: 1%;
     padding: 10px;
     z-index: 10000000;
