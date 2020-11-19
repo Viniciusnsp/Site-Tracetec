@@ -172,9 +172,23 @@ body {
     max-width: 740px;
   }
 
+
   /* Introduction Tablet */
   .introduction h1 {
     max-width: 740px;
+  }
+
+  .platform img, .portal img {
+    width: 290px;
+    margin-left: 80px;
+  }
+
+  .platform {
+    width: 350px;
+  }
+
+  .portal {
+    width: 350;
   }
 
   /* Services and Benefits Tablet */
@@ -208,21 +222,6 @@ body {
 		flex-direction: column;
 		width: 100%;
   }
-  
-    
-  .whatsapp {
-    display: none;
-   }
-
-.whatsapp-mobile{
-    display: block;
-    position: fixed;
-    top: 82%;
-    right: 1%;
-    padding: 10px;
-    z-index: 10000000;
-    
-    }
 
   .container-header {
     display: flex;

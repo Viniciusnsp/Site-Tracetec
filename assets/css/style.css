@@ -96,23 +96,6 @@ body {
     left: 0;
 }
 
-/* Whatsapp button flutuante */
-
-.whatsapp {
-  position: fixed;
-  top: 82%;
-  right: 1%;
-  padding: 10px;
-  z-index: 10000000;
-  height: 100px;
-}
-.whatsapp:hover {
-  height: 103px;
-}
-
-.whatsapp-mobile{
-  display: none;
-}
 
 /* Introduction */
 .introduction {
@@ -468,21 +451,6 @@ body {
 		flex-direction: column;
 		max-width: 300px;
   }
-  
-  .whatsapp {
-    display: none;
-   }
-
-.whatsapp-mobile{
-    display: block;
-    position: fixed;
-    top: 80%;
-    right: 1%;
-    padding: 10px;
-    z-index: 10000000;
-    width: 100px;
-    
-    }
 
   #slide {
     width: 100%;

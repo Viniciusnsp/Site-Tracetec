@@ -97,7 +97,9 @@ body {
     border-radius: 8px;
     padding: 7px 10px;
     margin-bottom: 10px;
+    margin-top: 7px;
     font-size: 0.875em;
+    outline: none;
   }
   
   .contact-form-map textarea {
@@ -108,7 +110,9 @@ body {
     border-radius: 8px;
     padding: 7px 10px;
     margin-bottom: 32px;
+    margin-top: 7px;
     font-size: 0.875em;
+    outline: none;
   } 
 
 /* Title */
@@ -288,20 +292,6 @@ body {
   padding: 0;
 }
 
-  
-  .whatsapp {
-    display: none;
-   }
-
-.whatsapp-mobile{
-    display: block;
-    position: fixed;
-    top: 82%;
-    right: 1%;
-    padding: 10px;
-    z-index: 10000000;
-    
-    }
 
   /* Menu Mobile */
   .menu-nav ul{
@@ -339,12 +329,12 @@ body {
   }
 
   .map {
-    width:300px;
+    width:320px;
     
   }
 
   .map iframe {
-    width: 300px;
+    width: 320px;
     
     margin: auto 
   }

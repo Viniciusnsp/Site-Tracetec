@@ -27,7 +27,6 @@ body {
 }
 
 .prefeituras ul {
-  height: 800px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -50,19 +49,10 @@ body {
 
 /* Responsiveness*/
 @media only screen and (min-width: 740px) and (max-width: 979px) {
-    .prefeituras{
-      height: 550px;
-    }
-  
-  
+
     /* Services Tablet */
     .prefeituras ul {
       justify-content: space-around;
-    }
-  
-    /* Footer Tablet */
-    .footer-storie {
-      width: 350px;
     }
   }
   
@@ -74,37 +64,19 @@ body {
       justify-content: space-between;
       padding: 0;
     }
-    
-      
-  .whatsapp {
-    display: none;
-   }
-
-.whatsapp-mobile{
-    display: block;
-    position: fixed;
-    top: 82%;
-    right: 1%;
-    padding: 10px;
-    z-index: 10000000;
-    
-    }
   
     /* Menu Mobile */
     .menu-nav ul{
-          display: none;
-      }
+      display: none;
+    }
+
       #menu-mobile {
       display: block;
     }
     
   
     /* Services Mobile */
-  
-   
-     .prefeituras {
-         height: 2600px;
-     }
+
     .prefeituras ul {
       flex-direction: column;
     }

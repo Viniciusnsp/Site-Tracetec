@@ -202,22 +202,6 @@ body {
     padding: 0;
   }
   
-    
-  .whatsapp {
-    display: none;
-   }
-
-.whatsapp-mobile{
-    display: block;
-    position: fixed;
-    top: 82%;
-    right: 1%;
-    padding: 10px;
-    z-index: 10000000;
-    
-    }
-
-  
   /* Menu Mobile */
   .menu-nav ul{
     display: block;
