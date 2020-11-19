@@ -2,4 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/tracelognet/public_html/
-    - /bin/cp -R site-tracetec $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R pages $DEPLOYPATH
+    - /bin/cp -R PHPMailer-6.0.6 $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
